@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="45dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:padding="16dp"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:id="@+id/layout"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:elevation="5dp"
+            android:layout_weight="1"
+            android:text="Left"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:clickable="true"
+            android:focusable="true"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@android:color/background_light"
+            android:id="@+id/leftButton">
+
+        </Button>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:elevation="5dp"
+            android:layout_weight="1"
+            android:text="Right"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:clickable="true"
+            android:focusable="true"
+            android:textColor="@android:color/background_light"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/colorAccent"
+            android:id="@+id/rightButton">
+
+        </Button>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
